@@ -661,3 +661,11 @@ figcaption {
     margin: 8px 0;
   }
 }
+@media (max-width: 480px) {
+  .primeiro h2, .primeiro h4 {
+    text-align: center;
+  }
+  .segundo h2, .segundo h4 {
+    text-align: center;
+}
+}
