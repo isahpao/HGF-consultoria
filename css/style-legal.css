@@ -1,0 +1,277 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+  list-style: none;
+}
+
+body {
+  font-family: "Montserrat", "Open Sans", "Lato", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Container padrão */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 29px 0;
+}
+
+/* HEADER */
+.header {
+  background-color: white;
+  color: #003366;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative; /* necessário para o pseudo-elemento */
+  padding-bottom: 4px;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #0072ce;
+}
+
+/* Underline do link ativo */
+.menu a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #003366; /* cor do underline */
+}
+
+/* Botão toggle */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #003366;
+  cursor: pointer;
+}
+
+.logo {
+  height: 64px;
+}
+
+/* CONTEÚDO LEGAL */
+h2 {
+  color: #004080;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.container-legal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.cards-legal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin: 32px 0;
+  background: #e6f0ff;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  max-width: 900px;
+}
+
+/* BOTÃO */
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background-color: #006699;
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.1s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  background-color: #001830;
+  transform: translateY(-3px);
+}
+
+.footer {
+  background: linear-gradient(135deg, #003366, #3189d6);
+  color: white;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-info p {
+  margin: 4px 0;
+  color: #cce0ff;
+}
+
+.footer-links a {
+  color: white;
+  margin-top: 0;
+  margin-right: 12px;
+  margin-bottom: 8px;
+  margin-left: 12px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #001830;
+}
+
+.instagram-link i {
+  margin-right: 6px;
+}
+
+/* ================== */
+/* RESPONSIVIDADE */
+/* ================== */
+@media (max-width: 1024px) {
+  .logo {
+    height: 40px;
+  }
+  .menu {
+    gap: 10px;
+  }
+}
+/* Header responsivo */
+@media (max-width: 900px) {
+  .header .container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .logo {
+    height: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* escondido por padrão */
+    flex-direction: column;
+    gap: 16px;
+    background: white;
+    position: absolute;
+    top: 80px; /* abaixo do header */
+    right: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  .menu.active {
+    display: flex; /* aparece quando abre */
+  }
+  .menu-toggle {
+    display: block; /* mostra o botão */
+  }
+  .menu a.active::after {
+    display: none;
+  }
+  .header .container {
+    flex-direction: row !important;
+  }
+  .container-legal {
+    padding: 1rem;
+    height: auto;
+  }
+
+  .cards-legal {
+    margin: 20px 0;
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 0.95rem;
+    padding: 0 10px;
+    text-align: center;
+  }
+}
+/* FOOTER */
+@media (max-width: 768px) {
+  .footer-links a {
+    display: block;
+    margin: 6px 0;
+  }
+}
+@media (max-width: 600px) {
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footer-links a {
+    display: block;
+    margin: 8px 0;
+  }
+}
