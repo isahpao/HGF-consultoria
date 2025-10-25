@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HGF Consultoria</title>
 
-    <!-- Preconnect para melhorar performance das fontes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <!-- Carregamento otimizado das fontes -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&family=Lato:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link
@@ -55,91 +54,140 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="container">
+    <header class="header" id="inicio">
+      <!-- <div class="container"> -->
         <a href="#inicio">
           <img src="assets/logo-hgf.png" alt="Logo HGF" class="logo" />
         </a>
         <nav role="navigation" aria-label="Menu principal">
           <button class="menu-toggle" aria-label="Abrir Menu">☰</button>
-          <!-- Menu fixo -->
+          
           <ul class="menu">
-            <li><a href="#quem-somos" class="active">Quem Somos</a></li>
-            <li><a href="#consultoria">Consultoria</a></li>
-            <li><a href="#segmentos">Segmentos</a></li>
-            <li><a href="#terceirizacao">Terceirizações</a></li>
-            <li><a href="#cursos">Cursos</a></li>
-            <li><a href="#projetos">Projetos</a></li>
+            <!-- <li><a href="#sustentabilidade-e-inovacao" class="active">Sustentabilidade e Inovação</a></li>
+            <li><a href="#qualidade-e-seguranca">Qualidade e Segurança</a></li>
+            <li><a href="#governanca-e-conformidade">Governança e Conformidade</a></li> -->
+            <li><a href="#solucoes">Soluções</a></li>
+            <!-- <li><a href="#-retirar">Cursos</a></li>
+            <li><a href="#-retirar">Projetos</a></li> -->
             <li><a href="#equipe">Equipe</a></li>
             <li><a href="#contato">Contato</a></li>
           </ul>
         </nav>
-      </div>
+      <!-- </div> -->
     </header>
 
     <main>
-      <section class="hero" id="inicio">
+      <section class="hero">
+
+        <div class="hero-carousel">
+    <div class="hero-slide active" 
+    style="background-image: url('assets/Construção.jpg')"></div>
+    <div class="hero-slide" 
+    style="background-image: url('assets/Energia\ renovável.jpg')"></div>
+    <div class="hero-slide" 
+    style="background-image: url('assets/equipe.jpg')"></div>
+    <div class="hero-slide" 
+    style="background-image: url('assets/Escritorio.jpg')"></div>
+    <div class="hero-slide" 
+    style="background-image: url('assets/Geração\ de\ Energia.jpg')"></div>
+    <div class="hero-slide" 
+    style="background-image: url('assets/Mineração.jpg')"></div>
+    <div class="hero-slide" 
+    style="background-image: url('assets/Placas\ Energia\ Solar.jpg')"></div>
+    <div class="hero-slide" 
+    style="background-image: url('assets/Porto.jpg')"></div>
+    <div class="hero-slide" 
+    style="background-image: url('assets/Segurança\ do\ trabalho.jpg')"></div>
+    <div class="hero-slide" 
+    style="background-image: url('assets/Trabalho.JPG')"></div>
+  </div>
+
         <div class="container hero-content">
           <div class="hero-text">
-            <h1>Excelência em Sistemas de Gestão</h1>
-            <p>Mais de 30 anos transformando normas em resultados práticos</p>
+            <h1>Mais de 30 anos transformando normas em resultados práticos</h1>
             <p>
-              Consultoria, treinamentos e auditorias em sistemas de gestão para
-              empresas que buscam excelência e sustentabilidade.
+              Desenvolvemos e conduzimos auditorias e treinamentos personalizados, presenciais e on-line, voltados à qualificação de profissionais e melhoria de processos.
+Nossos programas formam auditores internos e impulsionam a cultura de qualidade e responsabilidade em todos os níveis da organização.
             </p>
-            <a href="#quem-somos" class="hero-button">Conheça a HGF</a>
           </div>
-        </div>
+            <a href="#sustentabilidade-e-inovacao" class="hero-button">Conheça a HGF</a>
+              
+            </div>
       </section>
 
-      <section id="quem-somos" class="cards-section">
-        <div class="container quem-somos-container">
-          <div class="quem-somos-texto">
-            <h2>Quem Somos</h2>
-            <p>
-              Com mais de 30 anos de experiência, a HGF Consultoria oferece
-              serviços de consultoria, assessoria, treinamentos e auditorias de
-              1ª, 2ª e 3ª parte, atuando nos setores de energias renováveis,
-              construção civil, saúde, mineração e sucroalcooleiro.
-            </p>
+<section id="sustentabilidade-e-inovacao">
+  <div class="container">
+    <h2 style="text-transform: uppercase;
+    ">Sustentabilidade &amp; Inovação</h2>
 
-            <p>
-              Nosso maior compromisso é tratar cada cliente como único.
-              Escutamos atentamente suas necessidades e expectativas para
-              transformá-las em soluções práticas, eficazes e focadas em
-              resultados reais e sustentáveis. Nosso objetivo é transformar
-              conhecimento em prática, garantindo que cada projeto entregue
-              benefícios concretos e mensuráveis.
-            </p>
+    <div class="bloco-sustentabilidade-inovacao">
+      <div class="texto-sustentabilidade">
+        <p class="frase-efeito">
+          Integramos práticas sustentáveis e soluções inovadoras para fortalecer a competitividade e responsabilidade ambiental das organizações.
+          Atuamos na implantação de sistemas de gestão ambiental, eficiência energética e inovação, alinhando tecnologia, desempenho e respeito ao meio ambiente.
+        </p>
 
-            <p>
-              Desenvolvemos soluções personalizadas para empresas que desejam
-              implementar Sistemas de Gestão baseados em normas internacionais,
-              abrangendo áreas como:
-            </p>
-          </div>
-          <div class="quem-somos-imagem">
-            <img
-              src="assets/Trabalho.JPG"
-              alt="Equipe da HGF Consultoria Ambiental"
-            />
-            <ul>
-              <li>Gestão da Qualidade</li>
-              <li>Gestão Ambiental</li>
-              <li>Saúde e Segurança Ocupacional</li>
-              <li>Responsabilidade Social</li>
-              <li>Continuidade de Negócios</li>
-              <li>Gestão de Riscos</li>
-              <li>Compliance</li>
-              <li>Eficiência Energética</li>
-              <li>Gestão de Ativos</li>
-              <li>Gestão da Inovação</li>
-            </ul>
-          </div>
+        <div class="acoes-tema">
+          <a 
+            href="#detalhes-sustentabilidade" 
+            id="btn-sustentabilidade" 
+            class="btn-theme" 
+            data-target="#detalhes-sustentabilidade"
+            aria-label="Saiba mais sobre o tema"
+            aria-controls="detalhes-sustentabilidade"
+          >
+            Saiba mais
+          </a>
+          <a 
+            href="#solucoes"
+            
+            class="btn-theme-solucoes"
+            data-target="#solucoes"
+            aria-label="Conheça nossas soluções"
+            aria-controls="solucoes"
+          >
+            Conheça nossas soluções
+          </a>
         </div>
-      </section>
 
-      <section id="consultoria" class="cards-section">
+    <div class="galeria-tema">
+      <img src="assets/IMGS TEMAS/Aerogerador.jpg" alt="Aerogeradores em campo">
+      <img src="assets/IMGS TEMAS/Carro eletrico.jpg" alt="Vaga para carro elétrico">
+      <img src="assets/IMGS TEMAS/Plantinha.jpg" alt="Muda de planta simbolizando sustentabilidade">
+      <img src="assets/IMGS TEMAS/Lampada.jpg" alt="Lâmpada acesa representando inovação">
+    </div>
+  </div>
+</div>
+<div class="detalhes-tema" id="detalhes-sustentabilidade">
+  <button class="fechar-tema" aria-label="Fechar detalhes">&times;</button>
+
+          <h3>Normas Relacionadas</h3>
+          <ul>
+            <li>
+              <strong>ISO 14001 – Gestão Ambiental</strong>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laudantium necessitatibus numquam exercitationem ab ut similique accusamus. Voluptates magni saepe culpa, reiciendis nam dolorum perspiciatis explicabo voluptate, aut, laudantium aperiam.</p>
+            </li>
+            <li>
+              <strong>ISO 50001 – Eficiência Energética</strong>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laudantium necessitatibus numquam exercitationem ab ut similique accusamus. Voluptates magni saepe culpa, reiciendis nam dolorum perspiciatis explicabo voluptate, aut, laudantium aperiam.</p>
+            </li>
+            <li>
+              <strong>ISO 56002 – Gestão da Inovação</strong>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laudantium necessitatibus numquam exercitationem ab ut similique accusamus. Voluptates magni saepe culpa, reiciendis nam dolorum perspiciatis explicabo voluptate, aut, laudantium aperiam.</p>
+            </li>
+            <li>
+              <strong>ISO 26000 – Responsabilidade Social</strong>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laudantium necessitatibus numquam exercitationem ab ut similique accusamus. Voluptates magni saepe culpa, reiciendis nam dolorum perspiciatis explicabo voluptate, aut, laudantium aperiam.</p>
+            </li>
+          </ul>
+        </div>
+      
+    
+  </div>
+</section>
+
+
+      <!-- <section id="consultoria" class="cards-section">
         <div class="container">
           <h2>Consultoria</h2>
           <p>
@@ -318,10 +366,10 @@
             que permitem às empresas focarem em suas atividades principais,
             garantindo qualidade, conformidade e eficiência.
           </p>
-        </div>
-
+        </div> -->
+<section id="solucoes">
         <div class="container">
-          <h3>Nossos Serviços</h3>
+          <h2>Soluções</h2>
           <dl class="dl-servicos">
             <dt>Análise Documental e Elaboração de Documentos</dt>
             <dd>
@@ -351,48 +399,58 @@
               auditorias à distância, mantendo a qualidade e a conformidade com
               normas como ISO 9001, 14001, 45001, PBQP-H, 50001, 55001, entre
               outras. Esse formato reduz custos de deslocamento, hospedagem e
-              alimentação, além de proporcionar segurança e praticidade,
-              especialmente em tempos de pandemia.
+              alimentação, além de proporcionar segurança e praticidade.
+            </dd>
+            <dt>Desenvolvimento de Cursos e Treinamentos</dt>
+            <dd>
+              A HGF Consultoria oferece cursos e treinamentos customizados para capacitar profissionais de sua organização, desenvolvendo habilidades técnicas e promovendo melhoria contínua. Nossos programas são ideais para empresas com múltiplos colaboradores ou unidades em diferentes localidades, e são elaborados com base em procedimentos, manuais, códigos de conduta e instruções de trabalho fornecidos pela organização.
+          <h4>Modalidades de Treinamento</h4>
+    <ul>
+      <li>In Company</li>
+        <p>Presencial, nas instalações da empresa, adaptado à rotina e
+              objetivos do negócio.</p>
+      
+      <li>On-line Ao Vivo</li>
+        <p>Aulas interativas em tempo real, com instrutores especializados e
+              recursos digitais.</p>
+      
+      <li>On-line Gravado</li>
+        <p>Conteúdo disponível para acesso flexível, ideal para profissionais
+              com agendas variadas.</p>
+      
+    </ul>
             </dd>
           </dl>
         </div>
-      </section>
+      
 
-      <section id="cursos" class="cards-section">
+      <!-- <section id="cursos" class="cards-section">
         <div class="container">
-          <h2>Desenvolvimento de Cursos e Treinamentos</h2>
+          <h3></h3>
 
           <p>
-            A HGF Consultoria oferece cursos e treinamentos customizados para
-            capacitar profissionais de sua organização, desenvolvendo
-            habilidades técnicas e promovendo melhoria contínua. Nossos
-            programas são ideais para empresas com múltiplos colaboradores ou
-            unidades em diferentes localidades, e são elaborados com base em
-            procedimentos, manuais, códigos de conduta e instruções de trabalho
-            fornecidos pela organização.
+            
           </p>
 
-          <h3>Modalidades de Treinamento</h3>
+          <h4 class="treinamento"></h4>
           <dl class="dl-treinamentos">
-            <dt>In Company</dt>
+            <dt></dt>
             <dd>
-              Presencial, nas instalações da empresa, adaptado à rotina e
-              objetivos do negócio.
+              
             </dd>
 
-            <dt>On-line Ao Vivo</dt>
+            <dt></dt>
             <dd>
-              Aulas interativas em tempo real, com instrutores especializados e
-              recursos digitais.
+              
             </dd>
 
-            <dt>On-line Gravado</dt>
+            <dt></dt>
             <dd>
-              Conteúdo disponível para acesso flexível, ideal para profissionais
-              com agendas variadas.
+              
             </dd>
-          </dl>
-
+          </dl> -->
+          
+<div class="container">
           <h3>Temas e Conteúdos Técnicos</h3>
           <dl class="media-querie-1024">
             <dt>Formação de Auditor Interno</dt>
@@ -456,7 +514,7 @@
         </div>
       </section>
 
-      <section id="projetos" class="cards-section">
+      <!-- <section id="projetos" class="cards-section">
         <div class="container">
           <h2>Projetos</h2>
 
@@ -565,21 +623,20 @@
             pela HGF Consultoria.
           </p>
         </div>
-      </section>
+      </section> -->
 
-      <section id="equipe" class="cards-section">
+      <section id="equipe" class="equipe">
         <div class="container">
-          <h2>Equipe</h2>
-
-          <p>
+          <div class="equipe-container">
+          <!-- <h4>
             A HGF Consultoria é formada por profissionais altamente capacitados,
             com ampla experiência em auditorias, treinamentos e implementação de
             sistemas de gestão em diferentes setores econômicos.
-          </p>
+          </h4> -->
 
-          <div class="equipe-membro primeiro">
+          <div class="equipe-membro">
             <h2>Humberto dos Santos Ferreira</h2>
-            <h4>Diretor da HGF Consultoria</h4>
+            <h3>Diretor da HGF Consultoria</h3>
 
             <ul>
               <li>
@@ -607,9 +664,9 @@
             </ul>
           </div>
 
-          <div class="equipe-membro segundo">
+          <div class="equipe-membro">
             <h2>Gisele Reis Ferreira</h2>
-            <h4>Diretora da HGF Consultoria</h4>
+            <h3>Diretora da HGF Consultoria</h3>
 
             <ul>
               <li>
@@ -628,17 +685,19 @@
               </li>
             </ul>
           </div>
+        </div>
 
-          <p class="p-final">
-            Nosso compromisso é oferecer soluções eficazes, personalizadas e
-            alinhadas às melhores práticas do mercado, garantindo resultados
-            concretos para nossos clientes.
-          </p>
+          
         </div>
       </section>
 
       <section class="contatos" id="contato">
         <div class="container">
+            <p class="p-final"><em>
+            Nosso compromisso é oferecer soluções eficazes, personalizadas e
+            alinhadas às melhores práticas do mercado, garantindo resultados
+            concretos para nossos clientes.
+            </em></p>
           <h2>Fale Conosco</h2>
           <p>
             Tem dúvidas ou quer saber mais? Entre em contato, teremos prazer em
@@ -677,14 +736,11 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer-content">
-        <div class="footer-info">
-          <p>&copy; 2025 HGF Consultoria. Todos os direitos reservados.</p>
-          <p class="footer-hours">Seg–Sex: 9h–18h | Sáb: 9h–13h</p>
-        </div>
+      <div class="footer-content">
+        
         <div class="footer-links">
-          <a href="#quem-somos">Sobre</a>
-          <a href="#consultoria">Serviços</a>
+          <a href="#solucoes">Soluções</a>
+          <a href="#equipe">Equipe</a>
           <a href="#contato">Contato</a>
           <a
             href="https://instagram.com/hgfconsultoria"
@@ -695,6 +751,10 @@
           </a>
           <a href="politica.html">Política de Privacidade</a>
           <a href="termos.html">Termos de Uso</a>
+        </div>
+        <div class="footer-info">
+          <p>&copy; 2025 HGF Consultoria. Todos os direitos reservados.</p>
+          
         </div>
       </div>
     </footer>
