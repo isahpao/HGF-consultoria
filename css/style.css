@@ -350,12 +350,10 @@ h4 {
 .equipe ul {
   max-width: 700px;
   margin: 20px auto 0;
-  padding-left: 20px;
+  padding: 0 20px;
 }
 .equipe ul li {
   margin-bottom: 12px;
-  position: relative;
-  padding-left: 1.2em;
   text-align: justify;
 }
 .equipe-container {
@@ -761,7 +759,7 @@ figcaption {
     font-size: 2rem;
   }
   .hero-text p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .hero-button {
     padding: 0.8rem 1.8rem;
@@ -772,7 +770,6 @@ figcaption {
   }
   p {
     font-size: 0.95rem;
-    padding: 0 10px;
     text-align: center;
   }
   /* .quem-somos-imagem {
@@ -783,9 +780,6 @@ figcaption {
 @media (max-width: 600px) {
   .hero-text h1 {
     font-size: 1.7rem;
-  }
-  .hero-text p {
-    font-size: 0.95rem;
   }
   .hero-button {
     width: 100%;
@@ -804,13 +798,13 @@ figcaption {
   } */
   /* CARDS SECTIONS */
   .equipe h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
-  .equipe p {
+  /* .equipe p {
     font-size: 0.95rem;
     padding: 0 10px;
     text-align: center;
-  }
+  } */
   /* .card h3 {
     font-size: 1.2rem;
   } */
@@ -840,13 +834,48 @@ figcaption {
   }
 }
 @media (max-width: 480px) {
-  h2, h4 {
-    text-align: center;
+  .hero-text p {
+    margin: 1rem;
   }
-  .dl-servicos dt{
+  .frase-efeito{
+    font-size: 0.9rem;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  h3{
+    font-size: 1.3rem;
+  }
+  .btn-theme-solucoes{
+    margin: 4px;
+  }
+  .detalhes-tema.active {
+    font-size: 0.95rem;
+  }
+  .detalhes-tema.active li p{
+    padding: 10px;
+  }
+  dl dt{
+    font-size: 1.1rem;
+  }
+  .dl-servicos dt, .dl-treinamentos dt {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  .nr-list{
+    flex-direction: column;
     text-align: center;
   }
   .equipe-container{
     flex-direction: column;
   }
+}
+@media (max-width: 380px) {
+  .hero-text h1 {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+  
+  
 }
