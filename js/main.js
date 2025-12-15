@@ -137,7 +137,6 @@ document.addEventListener("DOMContentLoaded", () => {
         bloco.classList.add("active");
         bloco.style.maxHeight = bloco.scrollHeight + "px";
         bloco.style.opacity = "1";
-        btn.textContent = "Ver menos";
 
         // salva posição antes de abrir
         bloco.dataset.scrollBefore = String(window.scrollY);
@@ -167,7 +166,6 @@ document.addEventListener("DOMContentLoaded", () => {
         bloco.style.maxHeight = "0";
         bloco.style.opacity = "0";
         bloco.classList.remove("active");
-        btn.textContent = "Saiba mais";
 
         // volta à posição anterior
         const scrollBefore = bloco.dataset.scrollBefore;
@@ -200,12 +198,6 @@ document.addEventListener("DOMContentLoaded", () => {
       bloco.style.opacity = "0";
       bloco.classList.remove("active");
 
-      const idBtn = bloco.id ? bloco.id.replace("detalhes-", "btn-") : null;
-      if (idBtn) {
-        const botaoPrincipal = document.getElementById(idBtn);
-        if (botaoPrincipal) botaoPrincipal.textContent = "Saiba mais";
-      }
-
       const scrollBefore = bloco.dataset.scrollBefore;
       if (scrollBefore !== undefined) {
         window.scrollTo({ top: parseFloat(scrollBefore), behavior: "smooth" });
@@ -232,12 +224,6 @@ document.addEventListener("DOMContentLoaded", () => {
       aberto.style.maxHeight = "0";
       aberto.style.opacity = "0";
       aberto.classList.remove("active");
-
-      const idBtn = aberto.id ? aberto.id.replace("detalhes-", "btn-") : null;
-      if (idBtn) {
-        const botaoPrincipal = document.getElementById(idBtn);
-        if (botaoPrincipal) botaoPrincipal.textContent = "Saiba mais";
-      }
 
       const scrollBefore = aberto.dataset.scrollBefore;
       if (scrollBefore !== undefined) {
@@ -277,5 +263,23 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 
     e.preventDefault();
     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".btn-interno").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const detalhes = btn.closest(".detalhes-tema");
+      if (!detalhes) return;
+
+      const extra = detalhes.querySelector(".conteudo-extra");
+      if (!extra) return;
+
+      const aberto = extra.classList.toggle("active");
+
+      btn.textContent = aberto ? "Ver menos" : "Saiba mais";
+    });
   });
 });
